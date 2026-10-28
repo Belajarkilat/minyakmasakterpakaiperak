@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /draf/
+Sitemap: https://minyakmasakterpakaiperak.com/sitemap.xml
