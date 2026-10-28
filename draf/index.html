@@ -18,10 +18,11 @@
 <link rel="canonical" href="https://minyakmasakterpakaiperak.com/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "@id": "https://minyakmasakterpakaiperak.com/#biz", "name": "Saudagar Minyak Terpakai", "legalName": "Saudagar Kaya Resources", "url": "https://minyakmasakterpakaiperak.com/", "logo": "https://minyakmasakterpakaiperak.com/img/logo-besar.jpg", "image": "https://minyakmasakterpakaiperak.com/img/kutip-siang.jpg", "description": "Pembeli minyak masak terpakai berlesen MPOB (621302017000) di Ipoh dan sekitar Perak. Kutipan terus ke rumah, kedai dan kilang.", "telephone": "+60179848545", "priceRange": "Harga ikut pasaran", "address": {"@type": "PostalAddress", "streetAddress": "F6, Jalan Chemor Jaya 2, Perindustrian Ringan Chemor Jaya", "addressLocality": "Chemor", "postalCode": "31200", "addressRegion": "Perak", "addressCountry": "MY"}, "areaServed": [{"@type": "City", "name": "Ipoh"}, {"@type": "City", "name": "Menglembu"}, {"@type": "City", "name": "Chemor"}, {"@type": "City", "name": "Batu Gajah"}, {"@type": "City", "name": "Gopeng"}, {"@type": "City", "name": "Kampar"}], "sameAs": ["https://www.instagram.com/saudagar_minyak_terpakai/"]}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4C22 20 12 30 12 42a20 20 0 0 0 40 0C52 30 42 20 32 4z' fill='%23D4A73C'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700 800;font-display:swap;src:url(fonts/playfair.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:Figtree;font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/figtree.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 :root{--p:#E9C46A;--pd:#D4A73C;--a:#E9C46A;--s:#1A1712;--ink:#F3E9D2;--mut:#B9AD90;--line:#2E2920;--bg:#0B0A08;--card:#14120E;--gold:linear-gradient(135deg,#F3D98B,#D4A73C 55%,#A97C22);--r:18px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -40,9 +41,9 @@ h3{font-size:19px;font-weight:600}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;line-height:1.15;min-width:0;min-height:44px}
 .brand img{border-radius:50%;flex:none;box-shadow:0 0 0 1.5px #D4A73C}
 .brand>span:last-child{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:15px}
-.mark{width:40px;height:40px;border-radius:50% 50% 50% 8px;transform:rotate(-45deg);background:var(--pd);color:#fff;display:grid;place-items:center;flex:none;font-family:"Playfair Display";font-weight:800}
-.mark::first-letter{}
-.mark>*{transform:rotate(45deg)}
+
+
+
 .lang{margin-left:auto;border:1.5px solid #6B5A33;background:none;border-radius:999px;padding:6px 12px;font:700 13px Figtree;cursor:pointer;color:var(--ink);min-height:44px;min-width:44px}
 nav .navcta{background:var(--gold);color:#0B0A08;text-decoration:none;border-radius:999px;padding:9px 14px;font-weight:700;font-size:14px;white-space:nowrap;min-height:44px;min-width:44px;justify-content:center;display:inline-flex;align-items:center;gap:6px}
 .hero{padding:34px 0 26px;background:radial-gradient(900px 420px at 85% 0%,rgba(212,167,60,.18),transparent 70%)}
@@ -93,13 +94,13 @@ section{padding:46px 0}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
 .card .n{width:34px;height:34px;border-radius:50%;background:var(--gold);color:#0B0A08;display:grid;place-items:center;font-weight:800;margin-bottom:10px}
 .card p{margin:0;color:var(--mut)}
-.price{display:grid;gap:14px}
-.pbig{font-family:"Playfair Display";font-size:44px;font-weight:800;color:var(--pd);line-height:1}
+
+
 .alt{background:#100E0A}
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.gal figure{margin:0}
-.gal img{border-radius:14px;aspect-ratio:1;object-fit:cover;width:100%}
-.gal figcaption{font-size:13px;color:var(--mut);margin-top:4px}
+
+
+
+
 .gal3{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}@media(min-width:760px){.gal3{grid-template-columns:repeat(4,1fr)}}.gal3 figure{margin:0}.gal3 img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;border:1px solid var(--line)}.gal3 figcaption{font-size:13px;color:var(--mut);margin-top:6px;text-align:center}
 .areas{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
 .areas li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-weight:600}
@@ -113,9 +114,9 @@ details p{margin:0;padding:0 18px 16px;color:var(--mut)}
 .mapcard svg{color:#E9C46A}
 .mapcard b{display:block}
 .mapcard span{color:var(--mut);font-size:14px}
-.inv{display:grid;gap:10px}
-.inv input,.inv select{width:100%;min-height:48px;border-radius:12px;border:1.5px solid var(--line);padding:0 12px;font:600 16px Figtree;background:#fff;color:var(--ink)}
-.inv label{font-weight:700;font-size:14px}
+
+
+
 footer small{font-size:13px}footer a{display:inline-block;padding:10px 0;color:#E9C46A}footer{background:#050403;border-top:1px solid #3A3222;color:#CFC3A3;padding:36px 0 110px;font-size:15px}
 footer a{color:#E9C46A}
 footer .wrap{display:grid;gap:18px}
@@ -133,8 +134,8 @@ footer small{color:#8C8169}
  .tgrid{grid-template-columns:1.25fr .9fr;align-items:start}
  .res{position:sticky;top:80px}
  .cards{grid-template-columns:repeat(3,1fr)}
- .price{grid-template-columns:1fr 1fr}
- .gal{grid-template-columns:repeat(4,1fr)}
+ 
+ 
  footer .wrap{grid-template-columns:2fr 1fr 1fr}
  .opts{grid-template-columns:1fr 1fr}
  .opts .full{grid-column:1/-1}
@@ -280,10 +281,8 @@ function fabT(){fab.classList.toggle('off',scrollY<520||inTool);q('#mbk').textCo
 new IntersectionObserver(es=>{inTool=es[0].isIntersecting;fabT()},{threshold:0}).observe(q('#kira'));
 new IntersectionObserver(es=>{resIn=es[0].isIntersecting;fabT()},{threshold:.35}).observe(q('#res'));
 addEventListener('scroll',fabT,{passive:true});
-const inv=q('#inv-go');
-if(inv){const iu=()=>{const p=q('#inv-place').value.trim(),z=q('#inv-size').selectedOptions[0].textContent;const msg=T('Salam '+C.short+', kami mahu jemput Program Pembelian Balik ke '+(p||'[nama taman/sekolah/surau]')+'. Anggaran penduduk/peserta: '+z+'. Bila tarikh yang sesuai?','Hi '+C.short+', we would like to invite your buyback programme to '+(p||'[housing area/school/surau]')+'. Expected participants: '+z+'. What dates are available?');inv.href='https://wa.me/'+C.wa+'?text='+encodeURIComponent(msg)};['#inv-place','#inv-size'].forEach(s=>q(s).addEventListener('input',iu));q('#inv-size').addEventListener('change',iu);inv._u=iu;iu()}
 const lang=q('#lang');
-function setL(l){L=l;document.documentElement.lang=l==='en'?'en':'ms';els.forEach(e=>e.innerHTML=l==='en'?e.dataset.en:e.dataset.ms);alts.forEach(e=>e.alt=l==='en'?e.dataset.enAlt:e.dataset.msAlt);als.forEach(e=>e.setAttribute('aria-label',l==='en'?e.dataset.enAl:e.dataset.msAl));lang.textContent=l==='en'?'BM':'EN';lang.setAttribute('aria-label',l==='en'?'Tukar ke Bahasa Melayu':'Switch to English');upd();if(inv)inv._u();try{localStorage.setItem('L',l)}catch(e){}}
+function setL(l){L=l;document.documentElement.lang=l==='en'?'en':'ms';els.forEach(e=>e.innerHTML=l==='en'?e.dataset.en:e.dataset.ms);alts.forEach(e=>e.alt=l==='en'?e.dataset.enAlt:e.dataset.msAlt);als.forEach(e=>e.setAttribute('aria-label',l==='en'?e.dataset.enAl:e.dataset.msAl));lang.textContent=l==='en'?'BM':'EN';lang.setAttribute('aria-label',l==='en'?'Tukar ke Bahasa Melayu':'Switch to English');upd();try{localStorage.setItem('L',l)}catch(e){}}
 lang.addEventListener('click',()=>setL(L==='en'?'ms':'en'));
 try{if(localStorage.getItem('L')==='en')setL('en');else upd()}catch(e){upd()}
 </script>
