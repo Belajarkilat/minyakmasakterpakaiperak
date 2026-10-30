@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3D98B"/><stop offset=".55" stop-color="#D4A73C"/><stop offset="1" stop-color="#A97C22"/></linearGradient>
+<radialGradient id="bg" cx=".7" cy=".3" r=".9"><stop offset="0" stop-color="#2A2214"/><stop offset="1" stop-color="#0B0A08"/></radialGradient>
+<linearGradient id="oil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9B949" stop-opacity=".9"/><stop offset="1" stop-color="#8A5A12" stop-opacity=".9"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="url(#bg)"/>
+<g fill="none" stroke="#3A3222" stroke-width="1"><circle cx="560" cy="180" r="220"/><circle cx="560" cy="180" r="300"/></g>
+<g transform="translate(250 90)">
+<rect x="70" y="0" width="90" height="46" rx="10" fill="#141210" stroke="url(#g)" stroke-width="6"/>
+<rect x="180" y="10" width="60" height="36" rx="8" fill="#141210" stroke="url(#g)" stroke-width="6"/>
+<rect x="0" y="46" width="300" height="400" rx="34" fill="#141210" stroke="url(#g)" stroke-width="8"/>
+<clipPath id="c"><rect x="4" y="50" width="292" height="392" rx="30"/></clipPath>
+<rect x="0" y="250" width="300" height="200" fill="url(#oil)" clip-path="url(#c)"/>
+<path d="M4 250 Q75 232 150 250 T296 250" fill="none" stroke="#F3D98B" stroke-width="4" opacity=".8"/>
+<circle cx="150" cy="170" r="62" fill="url(#g)"/>
+<text x="150" y="190" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="54" fill="#0B0A08">RM</text>
+</g>
+<g fill="url(#g)"><circle cx="150" cy="430" r="26"/><circle cx="660" cy="470" r="18"/><circle cx="640" cy="120" r="10"/></g>
+<text x="150" y="439" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="22" fill="#0B0A08">RM</text>
+</svg>
